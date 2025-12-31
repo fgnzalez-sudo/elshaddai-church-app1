@@ -55,7 +55,6 @@ export default function HomePage() {
     </div>
   );
 }
-"use client";
 
 import { useLang } from "../lib/useLang";
 import { text } from "../lib/i18n";
