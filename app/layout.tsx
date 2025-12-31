@@ -1,7 +1,7 @@
 "use client";
 
-import { useLang } from "@/lib/useLang";
-import { text } from "@/lib/i18n";
+import { useLang } from "../lib/useLang";
+import { text } from "../lib/i18n";
 import "./globals.css";
 
 function LangToggle() {
