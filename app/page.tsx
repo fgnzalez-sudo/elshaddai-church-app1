@@ -57,8 +57,8 @@ export default function HomePage() {
 }
 "use client";
 
-import { useLang } from "@/lib/useLang";
-import { text } from "@/lib/i18n";
+import { useLang } from "../lib/useLang";
+import { text } from "../lib/i18n";
 
 export default function HomePage() {
   const { lang } = useLang();
