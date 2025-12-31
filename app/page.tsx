@@ -1,3 +1,4 @@
+"use client";
 const CHURCH = {
   name: "El Shaddai Revival Church",
   address: "10555 Woodedge Dr, Houston, TX 77070",
