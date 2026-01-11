@@ -1,3 +1,24 @@
+import { useLang } from "../lib/useLang";
+import { text } from "../lib/i18n";
+
+export default function HomePage() {
+  const { lang } = useLang();
+  const t = text[lang];
+
+  return (
+    <div className="stack">
+      <section className="card">
+        <h1>{t.home.welcomeTitle}</h1>
+        <p>{t.home.welcomeBody}</p>
+      </section>
+
+      <section className="card">
+        <h2>{t.home.serviceTimes}</h2>
+        {/* service times unchanged */}
+      </section>
+    </div>
+  );
+}
 "use client";
 const CHURCH = {
   name: "El Shaddai Revival Church",
@@ -52,28 +73,6 @@ export default function HomePage() {
             Abrir sitio web
           </a>
         </div>
-      </section>
-    </div>
-  );
-}
-
-import { useLang } from "../lib/useLang";
-import { text } from "../lib/i18n";
-
-export default function HomePage() {
-  const { lang } = useLang();
-  const t = text[lang];
-
-  return (
-    <div className="stack">
-      <section className="card">
-        <h1>{t.home.welcomeTitle}</h1>
-        <p>{t.home.welcomeBody}</p>
-      </section>
-
-      <section className="card">
-        <h2>{t.home.serviceTimes}</h2>
-        {/* service times unchanged */}
       </section>
     </div>
   );
